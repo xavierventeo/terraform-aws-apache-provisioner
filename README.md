@@ -19,13 +19,13 @@ You'll also need appropriate permissions and access credentials for your cloud p
 1. Clone this repository to your local machine:
 
 ```bash
-git clone git@github.com:xavierventeo/terraform-aws-ssm.git
+git clone git@github.com:xavierventeo/terraform-aws-apache-provisioner.git
 ```
 
 2. Navigate to the repository directory:
 
 ```bash
-cd terraform-aws-ssm
+cd terraform-aws-apache-provisioner
 ```
 
 3. Initialize Terraform:
