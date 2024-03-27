@@ -1,0 +1,15 @@
+# After clone, copy this file as terraform.tfvars add modify variables with your values
+region                 = "eu-west-1"             # Europe (Ireland)
+ami_ubuntu             = "ami-0c1c30571d2dae5c9"
+instance_type          = "t2.micro" #Free Tier
+ssh_protocol           = "ssh" 
+tcp_protocol           = "tcp"
+all_protocols          = "-1"
+ssh_key_name           = "my_key_pair"            # Change for your own EC2 ssh key pair
+ssh_key_full_name      = "~/.ssh/my_key_pair.pem" # Change for your own EC2 ssh key pair with path
+ubuntu_user            = "ubuntu"
+http_port              = 80
+ssh_port               = 22
+zero_port              = 0
+cidr_block_all_traffic = "0.0.0.0/0"
+allowed_ip_address     = "0.0.0.0/0"              # Change for your own IP 

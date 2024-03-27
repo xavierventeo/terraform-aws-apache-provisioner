@@ -1,5 +1,10 @@
 # Terraform AWS Apache Provisioner
+
 Use Terraform provisioner after launch an EC2 instance to install Apache
+
+Repository created for training purpose. The recomendation is to split responsabilities between infrastructure creation and software set up. 
+
+In this case, use terraform to create infrastructure and some CI/CD pipeline to install software. For instance: Github Actions or Jenkins
 
 ## Terraform Infrastructure as Code (IaC) Repository
 
@@ -34,13 +39,20 @@ cd terraform-aws-apache-provisioner
 terraform init
 ```
 
-4. Plan the infrastructure changes:
+4. Configure terraform variables with your own values
+
+```bash
+cp terraform.tfvars.example terraform.tfvars
+vi terraform.tfvars
+```
+
+5. Plan the infrastructure changes:
 
 ```bash
 terraform plan
 ```
 
-5. Apply the infrastructure changes to your AWS Account:
+6. Apply the infrastructure changes to your AWS Account:
 
 ```bash
 terraform apply
