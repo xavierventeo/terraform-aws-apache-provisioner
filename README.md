@@ -15,9 +15,8 @@ This repository contains Terraform code to provision and manage infrastructure o
 Before you begin, ensure you have the following tools installed:
 
 - [Terraform](https://www.terraform.io/downloads.html)
-- [AWS CLI](https://aws.amazon.com/cli/) 
-
-You'll also need appropriate permissions and access credentials for your cloud provider.
+- [AWS CLI](https://aws.amazon.com/cli/)
+- An [AWS account](https://aws.amazon.com/free/?all-free-tier) and the [associated credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) that allow you to create resources. These credentials must be configured for the AWS provider (see [Authentication and Configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration) section in AWS terraform provider documentation.)
 
 ### Usage
 
